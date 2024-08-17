@@ -81,7 +81,7 @@ This API provides a streamlined and efficient way to handle employee and departm
 - **URL:** `GET /Employee/`
 - **Example:**
     ```bash
-    GET "http://localhost:8080/Employee/"
+    GET "http://localhost:9090/Employee/"
     ```
 
 #### 🔍 Retrieve an Employee by ID
@@ -90,7 +90,7 @@ This API provides a streamlined and efficient way to handle employee and departm
   - `EmployeeId`: Long
 - **Example:**
     ```bash
-    GET "http://localhost:8080/Employee/1"
+    GET "http://localhost:9090/Employee/1"
     ```
 
 #### ✏️ Update an Employee
@@ -100,7 +100,7 @@ This API provides a streamlined and efficient way to handle employee and departm
 - **Request Body:** Employee JSON
 - **Example:**
     ```bash
-    PUT "http://localhost:8080/Employee/update/1" -H "Content-Type: application/json" -d '{"name":"John Smith","salary":55000}'
+    PUT "http://localhost:9090/Employee/update/1" -H "Content-Type: application/json" -d '{"name":"John Smith","salary":55000}'
     ```
 
 #### 🛠️ Update Employee by One Column
@@ -110,7 +110,7 @@ This API provides a streamlined and efficient way to handle employee and departm
 - **Request Body:** Employee JSON (only fields to update)
 - **Example:**
     ```bash
-    PATCH "http://localhost:8080/Employee/updateByColumn/1" -H "Content-Type: application/json" -d '{"name":"John Smith"}'
+    PATCH "http://localhost:9090/Employee/updateByColumn/1" -H "Content-Type: application/json" -d '{"name":"John Smith"}'
     ```
 
 #### 🗑️ Delete an Employee
@@ -119,7 +119,7 @@ This API provides a streamlined and efficient way to handle employee and departm
   - `EmployeeId`: Long
 - **Example:**
     ```bash
-    DELETE "http://localhost:8080/Employee/deleteById/1"
+    DELETE "http://localhost:9090/Employee/deleteById/1"
     ```
 
 ### 🌐Department Web Service Endpoints
